@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardBackgroundColor="#E6E6E6"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:id="@+id/item_menu"
+            >
+
+            <ImageView
+                android:id="@+id/menu_image"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_title"
+                android:layout_toRightOf="@+id/menu_image"
+                android:layout_alignParentTop="true"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/menu_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_title"
+                android:layout_toRightOf="@+id/menu_image"
+                android:text="desc" />
+
+            <TextView
+                android:id="@+id/menu_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_desc"
+                android:layout_toRightOf="@+id/menu_image"
+                android:text="Prices" />
+
+            <TextView
+                android:id="@+id/menu_variant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_prices"
+                android:layout_toRightOf="@+id/menu_image"
+                android:text="variant" />
+
+
+            <Button
+                android:id="@+id/btn_detail_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_prices"
+                android:layout_marginLeft="133dp"
+                android:layout_marginTop="19dp"
+                android:layout_toRightOf="@+id/menu_image"
+                android:text="+" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
